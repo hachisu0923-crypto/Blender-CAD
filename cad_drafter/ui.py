@@ -41,7 +41,8 @@ class CAD_PT_main(bpy.types.Panel):
         box.label(text="出力", icon='OUTPUT')
         box.prop(s, "line_width_mm")
         box.prop(s, "dpi")
-        box.operator("cad.export_svg", icon='EXPORT')
+        box.operator("cad.export_dxf", icon='EXPORT')
+        box.operator("cad.export_svg", icon='FILE_IMAGE')
 
 
 def register():
